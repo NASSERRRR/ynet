@@ -4,26 +4,23 @@ A polished .NET implementation of a YouTube downloader and MP3/MP4 tagging tools
 
 Keywords: ynet, youtube downloader .net, youtube mp3, youtube playlist downloader, youtubeexplode, ffmpeg, mp3 metadata, yt to mp3, yt downloader, windows youtube, youtube app, windows youtube download, youtube download, youtube mp4, youtube music
 
-## Quick overview
+## For Users
 
-- Project type: .NET 9.0 solution with library, tests, and platform UIs.
-- Core library: `src/YTP.Core` — download and metadata plumbing.
-- Windows UI: `src/YTP.WindowsUI` — WPF application (Windows-only).
-- macOS UI: `src/YTP.MacUI` — Avalonia project for macOS.
-- Tests: `src/YTP.Core.Tests` — unit tests for core functionality.
-- Solution file: `ktd.sln`
+For the easiest way to get started, download the ready-to-use executable for your operating system from the GitHub Releases page. FFmpeg is already included in these packages, so no separate installation is required.
+
+1. Go to the [GitHub Releases page](https://github.com/NASSERRRR/ynet/releases) for this project.  
+2. Download the appropriate file for your OS (e.g., .dmg for macOS, .exe for Windows).  
+3. Run the executable.
 
 ## Features
 
-- Download single YouTube videos.
-- Download entire YouTube playlists.
-- Save downloads as MP3 audio files.
-- Save downloads as MP4 video files.
+- Download single videos & entire playlists.
+- Save downloads as MP3 & MP4 files.
 - Select MP3 bitrate (e.g., 128k, 192k, 256k, 320k).
 - Select video quality (best available, up to 2160p where available).
 - Intelligent title and artist parsing for metadata tagging.
 - Multi-artist support (e.g., "Artist1 ft. Artist2").
-- Automatic album naming: uses playlist title or derived album names.
+- Automatic album naming: uses derived album names.
 - Embed high-quality cover art into MP3 files.
 - Attempt lyrics scraping and embed lyrics into MP3s when found.
 - Configurable output directory per user preference.
@@ -35,17 +32,18 @@ Keywords: ynet, youtube downloader .net, youtube mp3, youtube playlist downloade
 - Clipboard paste support for quick URL entry.
 - Toggleable progress bar for visual feedback.
 
-
-## For Users
-
-For the easiest way to get started, download the ready-to-use executable for your operating system from the GitHub Releases page. FFmpeg is already included in these packages, so no separate installation is required.
-
-1. Go to the [GitHub Releases page](https://github.com/NASSERRRR/ynet/releases) for this project.  
-2. Download the appropriate file for your OS (e.g., .dmg for macOS, .exe for Windows).  
-3. Run the executable.
-
 ## For Developers
-## Prerequisites (For Building)
+
+### Quick overview
+
+- Project type: .NET 9.0 solution with library, tests, and platform UIs.
+- Core library: `src/YTP.Core` — download and metadata plumbing.
+- Windows UI: `src/YTP.WindowsUI` — WPF application (Windows-only).
+- macOS UI: `src/YTP.MacUI` — Avalonia project for macOS.
+- Tests: `src/YTP.Core.Tests` — unit tests for core functionality.
+- Solution file: `ktd.sln`
+
+### Prerequisites (For Building)
 
 - .NET 9.0 SDK (download from https://dotnet.microsoft.com/download).
 - Windows Desktop (for building/running the WPF `YTP.WindowsUI` project).
