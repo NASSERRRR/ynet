@@ -1,6 +1,6 @@
 # ynet — YouTube Content Downloader (.NET)
 
-A polished .NET implementation of a YouTube downloader and MP3/MP4 tagging toolset. Designed for Windows desktop users and .NET developers who want a reliable, testable, and extensible downloader with metadata, album art, and lyrics support.
+A polished .NET implementation of a YouTube downloader and MP3/MP4 tagging toolset. Designed for users who want a clean, testable, and extensible downloader with metadata, album art, and lyrics support.
 
 Keywords: ynet, youtube downloader .net, youtube mp3, youtube playlist downloader, youtubeexplode, ffmpeg, mp3 metadata, yt to mp3, yt downloader, windows youtube, youtube app, windows youtube download, youtube download, youtube mp4, youtube music
 
@@ -36,7 +36,16 @@ Keywords: ynet, youtube downloader .net, youtube mp3, youtube playlist downloade
 - Toggleable progress bar for visual feedback.
 
 
-## Prerequisites
+## For Users
+
+For the easiest way to get started, download the ready-to-use executable for your operating system from the GitHub Releases page. FFmpeg is already included in these packages, so no separate installation is required.
+
+1. Go to the [GitHub Releases page](https://github.com/NASSERRRR/ynet/releases) for this project.  
+2. Download the appropriate file for your OS (e.g., .dmg for macOS, .exe for Windows).  
+3. Run the executable.
+
+## For Developers
+## Prerequisites (For Building)
 
 - .NET 9.0 SDK (download from https://dotnet.microsoft.com/download).
 - Windows Desktop (for building/running the WPF `YTP.WindowsUI` project).
@@ -121,7 +130,15 @@ Packaging recommendations:
 - Crashes: check `ytp_unhandled_exception.txt` (or similar) in the OS temp folder for stack traces written by the app.
 
 If you need help, open an issue: https://github.com/NASSERRRR/ytp/issues/new
-### Do not open issues about the macos version, unless you want to fix them yourself
+When reporting a bug, please include:
+
+* A clear description of the bug.  
+* Steps to reproduce the bug.  
+* Expected behavior vs. actual behavior.  
+* Any error messages from the "Activity Log".  
+* Your operating system.  
+* The version of each of the prerequisites that you are using.
+#### - Do not open issues about the macos version, unless you want to fix them yourself
 
 ## Contributing
 
@@ -141,5 +158,4 @@ Contributions are welcome. Please:
 
 ## License
 
-This repository is released under the MIT License — see `LICENSE` for details.
-s
+This repository is released under the MIT License — see [`LICENSE`](https://github.com/NASSERRRR/ynet/edit/main/LICENSE) for details.
